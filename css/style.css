@@ -1,0 +1,32 @@
+htnl {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+htnl:after, htnl:before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.container {
+  max-width: 960px;
+  background-color: #eaeaea;
+  margin: 20px auto;
+}
+
+.profile {
+  max-width: 350px;
+  background-color: #39383a;
+  color: #ababab;
+}
+
+.heading {
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.heading-light {
+  color: #fff;
+  border-bottom: 2px #5a5a5a dashed;
+}
+/*# sourceMappingURL=style.css.map */
