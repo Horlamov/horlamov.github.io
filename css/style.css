@@ -39,6 +39,7 @@ body {
 .profile__text {
   font-size: 13px;
   line-height: 24px;
+  margin-bottom: 50px;
 }
 
 .heading {
@@ -51,5 +52,32 @@ body {
 .heading__light {
   color: #ffffff;
   border-bottom: 2px #5a5a5a dashed;
+}
+
+.contacts__item {
+  border-bottom: 2px #5a5a5a dashed;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.contacts__title {
+  color: #ffffff;
+  margin-bottom: 13px;
+  font-size: 16px;
+}
+
+.contacts__text {
+  color: #ababab;
+  text-decoration: none;
+  padding-left: 30px;
+  line-height: 21px;
+}
+
+address {
+  font-style: normal;
+}
+
+.fa {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */
