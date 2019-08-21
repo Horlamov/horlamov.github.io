@@ -42,6 +42,7 @@
 	padding-bottom: 32px
 	text-align: center
 	border-bottom: 1px solid rgba(168, 168, 168, 0.44)
+	margin-bottom: 40px
 	&__address
 		font-size: 13px
 		margin-bottom: 15px
@@ -61,5 +62,70 @@
 	text-transform: uppercase
 	color: #808080
 	margin-bottom: 30px
+.list
+	list-style: none
+	padding-left: 0
+	&__item
+		position: relative
+		padding-left: 40px
+		padding-bottom: 30px
+		margin-bottom: 30px
+		border-bottom: 2px dashed #ececec
+		&-none_border
+			border: none
+		&-title
+			font-size: 11px
+			text-transform: uppercase
+			margin-bottom: 5px
+		&-date
+			font-size: 10px
+			text-transform: uppercase
+		&-text
+			font-size: 10px
+			color: #777777
 
-
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			top: 3px
+			width: 9px
+			height: 9px
+			border-radius: 50%
+			background-color: #000
+.skills
+	&-list
+		list-style-type: none
+		padding-left: 0
+		&__item
+			margin-bottom: 30px
+			text-transform: uppercase
+			font-size: 11px
+			display: flex
+			justify-content: space-between
+.level
+	width: 70%
+	height: 8px
+	border: 1px solid #39383a
+	position: relative
+	
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		height: 100%
+		background-color: #898989
+	&-90
+		&:before
+			width: 90%
+			position: absolute
+		
+	&-80
+		&:before
+			width: 80%
+			position: absolute
+	&-50
+		&:before
+			width: 50%
+			position: absolute
