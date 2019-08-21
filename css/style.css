@@ -13,19 +13,28 @@ body {
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 960px;
   background-color: #eaeaea;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 20px auto;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .profile {
-  max-width: 350px;
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
   background-color: #39383a;
   color: #ababab;
 }
 
 .profile__photo {
-  height: 300px;
+  height: 270px;
   background-image: url(https://sun9-29.userapi.com/c624322/v624322185/156d2/ZTE6CB4_m6g.jpg);
   background-size: cover;
   background-position: top;
@@ -95,8 +104,8 @@ address {
 }
 
 .language {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   border: 6px solid #5c5c5c;
   border-radius: 50%;
   display: -webkit-box;
@@ -155,5 +164,115 @@ address {
 .line:nth-child(2) {
   width: 100px;
   margin-left: 20px;
+}
+
+.resume {
+  padding: 25px 30px;
+  -ms-flex-preferred-size: 57%;
+      flex-basis: 57%;
+  background-color: white;
+}
+
+.resume-wrap {
+  border: 1px solid rgba(168, 168, 168, 0.44);
+  padding: 36px 53px;
+  min-height: 100%;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 38px;
+}
+
+.logo__lines-left > .logo__line:nth-child(2) {
+  margin-right: 20px;
+  width: 55px;
+}
+
+.logo__lines-right > .logo__line:nth-child(2) {
+  margin-left: 20px;
+  width: 55px;
+}
+
+.logo__img {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #39383a;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo__lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 17px;
+  margin-right: 17px;
+}
+
+.logo__line {
+  width: 43px;
+  height: 2px;
+  background-color: #39383a;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.about {
+  padding-bottom: 32px;
+  text-align: center;
+  border-bottom: 1px solid rgba(168, 168, 168, 0.44);
+}
+
+.about__address {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.about__contacts {
+  font-size: 10px;
+}
+
+.about__contacts > a {
+  text-decoration: none;
+  color: #777777;
+}
+
+.name {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 11px;
+  margin-bottom: 10px;
+}
+
+.position {
+  display: inline-block;
+  font-size: 9px;
+  text-transform: uppercase;
+  color: #808080;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map */
