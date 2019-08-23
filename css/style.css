@@ -379,4 +379,78 @@ address {
   width: 50%;
   position: absolute;
 }
+
+@media screen and (max-width: 1024px) {
+  .language {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+  }
+  .container .profile__photo {
+    height: 400px;
+  }
+  .container .lines {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+  .resume {
+    padding: 10px;
+  }
+  .resume-wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .list__item-title {
+    font-size: 14px;
+  }
+  .list__item-date {
+    font-size: 12px;
+  }
+  .list__item-text {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .about__contacts-link {
+    font-size: 13px;
+  }
+  .languages {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .logo {
+    display: none;
+  }
+  .language {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    min-width: 320px;
+  }
+  .name {
+    letter-spacing: normal;
+  }
+  .level {
+    width: 50%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
