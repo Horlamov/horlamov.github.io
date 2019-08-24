@@ -400,6 +400,11 @@ address {
   .container .lines {
     display: none;
   }
+  .container .languages {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -425,11 +430,6 @@ address {
   }
   .about__contacts-link {
     font-size: 13px;
-  }
-  .languages {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
