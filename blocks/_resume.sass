@@ -58,7 +58,7 @@
 	margin-bottom: 10px
 .position
 	display: inline-block
-	font-size: 9px
+	font-size: 16px
 	text-transform: uppercase
 	color: #808080
 	margin-bottom: 30px
@@ -73,16 +73,23 @@
 		border-bottom: 2px dashed #ececec
 		&-none_border
 			border: none
+		&-none_padding
+			padding-bottom: 0
+			margin-bottom: 0
 		&-title
-			font-size: 11px
+			font-size: 14px
 			text-transform: uppercase
-			margin-bottom: 5px
+			margin-bottom: 0px
 		&-date
 			font-size: 10px
 			text-transform: uppercase
+			margin-bottom: 15px
 		&-text
-			font-size: 10px
+			font-size: 14px
+			line-height: 20px
 			color: #777777
+			&--dark
+				color:	#000
 
 		&:before
 			content: ''
@@ -93,6 +100,11 @@
 			height: 9px
 			border-radius: 50%
 			background-color: #000
+		&> ul> li
+			padding-top: 8px 
+			font-size: 14px
+			line-height: 18px
+			color: #777777
 .skills
 	&-list
 		list-style-type: none
@@ -129,3 +141,43 @@
 		&:before
 			width: 50%
 			position: absolute
+
+.resume-certificates-view
+	position: relative
+	max-width: 400px
+	padding: 32px 26px 36px
+	background: url(../img/gilosh.png) 0 0	repeat
+	outline: 8px solid #eddbca
+	outline-offset: -16px
+	text-align: center
+	&:before
+		content: " "
+		position: absolute
+		display: inline-block
+		width: 33px
+		height: 44px
+		background: url(../img/stamp.png) 0 		no-repeat
+		bottom: -10px
+		left: 20px
+	&__year-group-title 
+		margin: 5px 0
+		font-size: 10px
+		color: #a19051
+		&:before, &:after
+			content: " "
+			display: inline-block
+			width: 43px
+			margin: 0 4px
+			border-top: 1px solid #a19051
+			vertical-align: middle
+		
+	&__item
+		font-size: 12px
+		padding-top: 8px
+		&> a
+			color: #000
+			text-decoration: none
+			border: 0
+			background: transparent
+			font-size: inherit
+			outline: none
