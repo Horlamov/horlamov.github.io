@@ -522,10 +522,6 @@ address {
   }
 }
 
-.tabs {
-  position: relative;
-}
-
 .tab, .tab-title {
   display: inline-block;
 }
@@ -558,5 +554,36 @@ address {
 
 .tab :checked ~ .tab-content {
   display: block;
+}
+
+.nav-container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  max-width: 960px;
+  margin: 20px auto;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: auto 1px;
+}
+
+.nav-item {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.nav-item__pic {
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
 }
 /*# sourceMappingURL=style.css.map */
